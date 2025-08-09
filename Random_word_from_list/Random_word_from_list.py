@@ -27,3 +27,13 @@ for i, line in enumerate(file):
     if i == random_line:
         print(line.rstrip())  # rstrip removes any trailing newlines :)
         break
+# generate a random number between possible interval
+random_line = random.randint(0, num_lines)
+
+# re-iterate from first line
+file.seek(0)
+
+for i, line in enumerate(file):
+    if i == random_line:
+        print(line.rstrip())  # rstrip removes any trailing newlines :)
+        break
